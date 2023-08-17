@@ -1,23 +1,23 @@
 .arc-1 {
-  opacity: 0.6;
-  stroke-dashoffset: 251;
-  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-}
-
-.btn:hover .arc-1 {
-  stroke-dashoffset: 165;
+   opacity: 0.6;
+   stroke-dashoffset: 251;
+   transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .arc-2 {
-  opacity: 0.3;
-  stroke-dashoffset: 165;
+   opacity: 0.3;
+   stroke-dashoffset: 165;
 }
 
 .arc {
-  fill: none;
-  stroke-width: 1px;
-  stroke: currentColor;
-  stroke-dasharray: 251;
-  transform: rotate(90deg);
-  transform-origin: center;
+   fill: none;
+   stroke-width: 1px;
+   stroke: currentColor;
+   stroke-dasharray: 251;
+   transform: rotate(90deg);
+   transform-origin: center;
+}
+
+.btn-link:hover .arc-1 {
+   stroke-dashoffset: 165;
 }
