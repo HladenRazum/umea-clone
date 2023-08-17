@@ -1,64 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>[CLONE] Umeå - Furniture Store</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <a href="/">
-        <img
-          src="https://umea.qodeinteractive.com/wp-content/uploads/2021/04/umea-logo-regular.png"
-          alt="logo"
-          width="114"
-          height="42"
-      /></a>
-      <span>Cart</span>
-      <span>Menu</span>
-    </header>
-    <section>
-      <ul>
-        <li>
-          <div>
-            <p>furniture</p>
-            <h2>Superior living</h2>
-            <p>
-              The perfect place for every contemporary furniture store and
-              manufacturer. This is Umeå.
-            </p>
-            <a href="/">View More</a>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>furniture</p>
-            <h2>Superior living</h2>
-            <p>
-              The perfect place for every contemporary furniture store and
-              manufacturer. This is Umeå.
-            </p>
-            <a href="/">View More</a>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>furniture</p>
-            <h2>Superior living</h2>
-            <p>
-              The perfect place for every contemporary furniture store and
-              manufacturer. This is Umeå.
-            </p>
-            <a href="/">View More</a>
-          </div>
-        </li>
-      </ul>
-      <div>
-        <input type="radio" value="slide-1" name="slides" />
-        <input type="radio" value="slide-2" name="slides" />
-        <input type="radio" value="slide-3" name="slides" />
-      </div>
-    </section>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>[CLONE] Umeå - Furniture Store</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {
+                     clifford: "#da373d",
+                  },
+                  fontSize: {
+                     "5xl": "55px",
+                     caption: "15px",
+                     subtitle: "19px",
+                  },
+               },
+            },
+         };
+      </script>
+   </head>
+   <body class="text-white font-['Roboto']">
+      <!-- <header>
+         <a href="/">
+            <img
+               src="https://umea.qodeinteractive.com/wp-content/uploads/2021/04/umea-logo-regular.png"
+               alt="logo"
+               width="114"
+               height="42"
+         /></a>
+         <span>Cart</span>
+         <span>Menu</span>
+      </header> -->
+      <section>
+         <ul>
+            <li class="bg-red-500 h-[480px] relative">
+               <div>
+                  <p
+                     class="uppercase font-light absolute left-[40px] top-[127px] text-caption"
+                  >
+                     furniture
+                  </p>
+                  <h2 class="text-5xl absolute left-[40px] top-[149px]">
+                     Superior living
+                  </h2>
+                  <p
+                     class="text-subtitle font-light max-w-[290px] leading-8 absolute left-[40px] top-[237px]"
+                  >
+                     The perfect place for every contemporary furniture store
+                     and manufacturer. This is Umeå.
+                  </p>
+                  <span class="absolute top-[356px] left-[40px]">
+                     <div class="relative flex">
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           x="0px"
+                           y="0px"
+                           width="40px"
+                           height="40px"
+                           viewBox="0 0 40 40"
+                           enable-background="new 0 0 40 40"
+                           xml:space="preserve"
+                        >
+                           <circle
+                              class="qodef-arc-1"
+                              cx="20"
+                              cy="20"
+                              r="19"
+                           ></circle>
+                           <circle
+                              class="qodef-arc-2"
+                              cx="20"
+                              cy="20"
+                              r="19"
+                           ></circle>
+                        </svg>
+                        <a class="text-bold inline-flex" href="/">View More</a>
+                     </div>
+                  </span>
+               </div>
+            </li>
+            <!-- <li class="bg-blue-500 h-[480px] relative">
+               <div>
+                  <p class="uppercase font-light">furniture</p>
+                  <h2 class="text-5xl">Second slide</h2>
+                  <p class="text-lg font-light max-w-[290px] leading-8">
+                     The perfect place for every contemporary furniture store
+                     and manufacturer. This is Umeå.
+                  </p>
+                  <a class="text-bold btn-link" href="/">View More</a>
+               </div>
+            </li>
+            <li class="bg-yellow-500 h-[480px] relative">
+               <div>
+                  <p class="uppercase font-light">furniture</p>
+                  <h2 class="text-5xl">Third slide</h2>
+                  <p class="text-lg font-light max-w-[290px] leading-8">
+                     The perfect place for every contemporary furniture store
+                     and manufacturer. This is Umeå.
+                  </p>
+                  <a class="text-bold btn-link" href="/">View More</a>
+               </div>
+            </li> -->
+         </ul>
+         <div>
+            <input type="radio" checked value="slide-1" name="slides" />
+            <input type="radio" value="slide-2" name="slides" />
+            <input type="radio" value="slide-3" name="slides" />
+         </div>
+      </section>
+   </body>
 </html>
