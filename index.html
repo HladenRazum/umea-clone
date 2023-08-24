@@ -33,9 +33,9 @@
          <span>Cart</span>
          <span>Menu</span>
       </header> -->
-    <section class="relative h-[600px]">
+    <section class="relative h-[480px] md:h-[700px]">
       <ul id="slides-container">
-        <li class="bg-white text-black slide-wrapper">
+        <li class="bg-white text-black slide-wrapper h-full">
           <article
             class="p-10 bg-gradient-to-r from-purple-500 to-pink-500 slide slide-bg-1"
           >
@@ -69,7 +69,7 @@
             </div>
           </article>
         </li>
-        <li class="bg-white text-black slide-wrapper hidden">
+        <li class="bg-white text-black slide-wrapper hidden h-full">
           <article
             class="p-10 bg-gradient-to-r from-purple-500 to-pink-500 slide slide-bg-2"
           >
@@ -103,7 +103,7 @@
             </div>
           </article>
         </li>
-        <li class="bg-white text-black slide-wrapper hidden">
+        <li class="bg-white text-black slide-wrapper hidden h-full">
           <article
             class="p-10 bg-gradient-to-r from-purple-500 to-pink-500 slide slide-bg-3"
           >
@@ -138,7 +138,10 @@
           </article>
         </li>
       </ul>
-      <div id="slider" class="absolute bottom-[5%] left-[50%]">
+      <div
+        id="slider"
+        class="absolute bottom-[5%] left-[50%] translate-x-[-50%]"
+      >
         <input type="radio" checked value="slide-1" name="slides" />
         <input type="radio" value="slide-2" name="slides" />
         <input type="radio" value="slide-3" name="slides" />

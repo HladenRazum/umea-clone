@@ -31,7 +31,7 @@ article.slide {
 }
 
 article.slide-bg-1 {
-  /* background: url("./assets/slider-1.jpg"); */
+  background: url("./assets/slider-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -58,4 +58,32 @@ li > article {
 
 ul {
   height: 100%;
+}
+
+/* Slider radio buttons */
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: transparent;
+  /* Not removed via appearance */
+  margin: 0 0.3em;
+  cursor: pointer;
+}
+
+input[type="radio"]:nth-child(1)::after {
+  content: "01";
+}
+
+input[type="radio"]:nth-child(2)::after {
+  content: "02";
+}
+
+input[type="radio"]:nth-child(3)::after {
+  content: "03";
+}
+
+input[type="radio"]:checked::before {
+  content: "_________";
+  margin-right: 1em;
 }

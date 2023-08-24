@@ -1,7 +1,7 @@
 const slideRadioButtons = document.querySelectorAll("input[name=slides]");
 const slideElements = document.querySelectorAll(".slide-wrapper");
 
-const SLIDE_INTERVAL_IN_MILLISECONDS = 6000;
+const SLIDE_INTERVAL_IN_MILLISECONDS = 7000;
 
 let currentSlideIndex = 0;
 
