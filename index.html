@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="styles.css" />
-      <title>[CLONE] Umeå - Furniture Store</title>
-      <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>[CLONE] Umeå - Furniture Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-      <script>
-         tailwind.config = {
-            theme: {
-               extend: {
-                  fontSize: {
-                     "5xl": "55px",
-                     caption: "15px",
-                     subtitle: "19px",
-                  },
-               },
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontSize: {
+              "5xl": "55px",
+              caption: "15px",
+              subtitle: "19px",
             },
-         };
-      </script>
-   </head>
-   <body class="text-white font-['Roboto']">
-      <!-- <header>
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-white font-['Roboto']">
+    <!-- <header>
          <a href="/">
             <img
                src="https://umea.qodeinteractive.com/wp-content/uploads/2021/04/umea-logo-regular.png"
@@ -33,170 +33,117 @@
          <span>Cart</span>
          <span>Menu</span>
       </header> -->
-      <section>
-         <ul>
-            <li class="bg-neutral-100 text-black h-[480px] relative">
-               <div>
-                  <p
-                     class="uppercase font-light absolute left-[40px] top-[127px] text-caption"
+    <section class="relative h-[600px]">
+      <ul id="slides-container">
+        <li class="bg-white text-black slide-wrapper">
+          <article
+            class="p-10 bg-gradient-to-r from-purple-500 to-pink-500 slide slide-bg-1"
+          >
+            <p class="uppercase font-light text-caption">furniture</p>
+            <h2 class="text-5xl font-bold mb-1">Better interiors</h2>
+            <p class="text-subtitle font-light max-w-[290px] leading-8 mb-6">
+              The perfect place for every contemporary furniture store and
+              manufacturer. This is Umeå.
+            </p>
+            <div class="btn-link">
+              <div class="flex items-end">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 40 40"
+                    enable-background="new 0 0 40 40"
+                    xml:space="preserve"
                   >
-                     furniture
-                  </p>
-                  <h2 class="text-5xl absolute left-[40px] top-[149px]">
-                     Superior living
-                  </h2>
-                  <p
-                     class="text-subtitle font-light max-w-[290px] leading-8 absolute left-[40px] top-[237px]"
+                    <circle class="arc arc-1" cx="20" cy="20" r="19"></circle>
+                    <circle class="arc arc-2" cx="20" cy="20" r="19"></circle>
+                  </svg>
+                </span>
+                <a class="ml-[-15px] text-bold whitespace-nowrap" href="/"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="bg-white text-black slide-wrapper hidden">
+          <article
+            class="p-10 bg-gradient-to-r from-purple-500 to-pink-500 slide slide-bg-2"
+          >
+            <p class="uppercase font-light text-caption">furniture</p>
+            <h2 class="text-5xl font-bold mb-1">Better interiors</h2>
+            <p class="text-subtitle font-light max-w-[290px] leading-8 mb-6">
+              The perfect place for every contemporary furniture store and
+              manufacturer. This is Umeå.
+            </p>
+            <div class="btn-link">
+              <div class="flex items-end">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 40 40"
+                    enable-background="new 0 0 40 40"
+                    xml:space="preserve"
                   >
-                     The perfect place for every contemporary furniture store
-                     and manufacturer. This is Umeå.
-                  </p>
-                  <div class="btn-link group absolute top-[356px] left-[40px]">
-                     <div class="flex align-center justify-center">
-                        <span class="relative">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              x="0px"
-                              y="0px"
-                              width="40px"
-                              height="40px"
-                              viewBox="0 0 40 40"
-                              enable-background="new 0 0 40 40"
-                              xml:space="preserve"
-                           >
-                              <circle
-                                 class="arc arc-1"
-                                 cx="20"
-                                 cy="20"
-                                 r="19"
-                              ></circle>
-                              <circle
-                                 class="arc arc-2"
-                                 cx="20"
-                                 cy="20"
-                                 r="19"
-                              ></circle>
-                           </svg>
-                        </span>
-                        <a
-                           class="text-bold absolute whitespace-nowrap left-[20px] top-[15px]"
-                           href="/"
-                           >View More</a
-                        >
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <li class="bg-neutral-800 h-[480px] relative">
-               <div>
-                  <p
-                     class="uppercase font-light absolute left-[40px] top-[127px] text-caption"
+                    <circle class="arc arc-1" cx="20" cy="20" r="19"></circle>
+                    <circle class="arc arc-2" cx="20" cy="20" r="19"></circle>
+                  </svg>
+                </span>
+                <a class="ml-[-15px] text-bold whitespace-nowrap" href="/"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="bg-white text-black slide-wrapper hidden">
+          <article
+            class="p-10 bg-gradient-to-r from-purple-500 to-pink-500 slide slide-bg-3"
+          >
+            <p class="uppercase font-light text-caption">furniture</p>
+            <h2 class="text-5xl font-bold mb-1">Better interiors</h2>
+            <p class="text-subtitle font-light max-w-[290px] leading-8 mb-6">
+              The perfect place for every contemporary furniture store and
+              manufacturer. This is Umeå.
+            </p>
+            <div class="btn-link">
+              <div class="flex items-end">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 40 40"
+                    enable-background="new 0 0 40 40"
+                    xml:space="preserve"
                   >
-                     furniture
-                  </p>
-                  <h2 class="text-5xl absolute left-[40px] top-[149px]">
-                     Superior living
-                  </h2>
-                  <p
-                     class="text-subtitle font-light max-w-[290px] leading-8 absolute left-[40px] top-[237px]"
-                  >
-                     The perfect place for every contemporary furniture store
-                     and manufacturer. This is Umeå.
-                  </p>
-                  <div class="btn-link group absolute top-[356px] left-[40px]">
-                     <div class="flex align-center justify-center">
-                        <span class="relative">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              x="0px"
-                              y="0px"
-                              width="40px"
-                              height="40px"
-                              viewBox="0 0 40 40"
-                              enable-background="new 0 0 40 40"
-                              xml:space="preserve"
-                           >
-                              <circle
-                                 class="arc arc-1"
-                                 cx="20"
-                                 cy="20"
-                                 r="19"
-                              ></circle>
-                              <circle
-                                 class="arc arc-2"
-                                 cx="20"
-                                 cy="20"
-                                 r="19"
-                              ></circle>
-                           </svg>
-                        </span>
-                        <a
-                           class="text-bold absolute whitespace-nowrap left-[20px] top-[15px]"
-                           href="/"
-                           >View More</a
-                        >
-                     </div>
-                  </div>
-               </div>
-            </li>
-            <li class="bg-neutral-400 text-black h-[480px] relative">
-               <div>
-                  <p
-                     class="uppercase font-light absolute left-[40px] top-[127px] text-caption"
-                  >
-                     furniture
-                  </p>
-                  <h2 class="text-5xl absolute left-[40px] top-[149px]">
-                     Superior living
-                  </h2>
-                  <p
-                     class="text-subtitle font-light max-w-[290px] leading-8 absolute left-[40px] top-[237px]"
-                  >
-                     The perfect place for every contemporary furniture store
-                     and manufacturer. This is Umeå.
-                  </p>
-                  <div class="btn-link group absolute top-[356px] left-[40px]">
-                     <div class="flex align-center justify-center">
-                        <span class="relative">
-                           <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              x="0px"
-                              y="0px"
-                              width="40px"
-                              height="40px"
-                              viewBox="0 0 40 40"
-                              enable-background="new 0 0 40 40"
-                              xml:space="preserve"
-                           >
-                              <circle
-                                 class="arc arc-1"
-                                 cx="20"
-                                 cy="20"
-                                 r="19"
-                              ></circle>
-                              <circle
-                                 class="arc arc-2"
-                                 cx="20"
-                                 cy="20"
-                                 r="19"
-                              ></circle>
-                           </svg>
-                        </span>
-                        <a
-                           class="text-bold absolute whitespace-nowrap left-[20px] top-[15px]"
-                           href="/"
-                           >View More</a
-                        >
-                     </div>
-                  </div>
-               </div>
-            </li>
-         </ul>
-         <div>
-            <input type="radio" checked value="slide-1" name="slides" />
-            <input type="radio" value="slide-2" name="slides" />
-            <input type="radio" value="slide-3" name="slides" />
-         </div>
-      </section>
-   </body>
+                    <circle class="arc arc-1" cx="20" cy="20" r="19"></circle>
+                    <circle class="arc arc-2" cx="20" cy="20" r="19"></circle>
+                  </svg>
+                </span>
+                <a class="ml-[-15px] text-bold whitespace-nowrap" href="/"
+                  >View More</a
+                >
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div id="slider" class="absolute bottom-[5%] left-[50%]">
+        <input type="radio" checked value="slide-1" name="slides" />
+        <input type="radio" value="slide-2" name="slides" />
+        <input type="radio" value="slide-3" name="slides" />
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
