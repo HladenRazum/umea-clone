@@ -19,7 +19,8 @@
   transform-origin: center;
 }
 
-.btn-link:hover .arc-1 {
+.btn-link:hover .arc-1,
+.menu-btn:hover .arc-1 {
   stroke-dashoffset: 165;
 }
 
@@ -86,4 +87,8 @@ input[type="radio"]:nth-child(3)::after {
 input[type="radio"]:checked::before {
   content: "_________";
   margin-right: 1em;
+}
+
+/* Menu btn */
+.menu-btn {
 }
