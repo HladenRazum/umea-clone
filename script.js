@@ -6,8 +6,8 @@ const SLIDE_INTERVAL_IN_MILLISECONDS = 7000;
 let currentSlideIndex = 0;
 
 function slide(duration) {
-  const interval = setInterval(() => {
-    [...slideRadioButtons].map((slide, index) => {
+  setInterval(() => {
+    slideRadioButtons.forEach((slide, index) => {
       if (currentSlideIndex === index) {
         slide.checked = true;
       } else {
@@ -15,41 +15,26 @@ function slide(duration) {
       }
     });
 
-    [...slideElements].map((slide, index) => {
-      if (index === currentSlideIndex) {
-        slide.classList.add("visible");
-        slide.classList.remove("hidden");
-      } else {
-        slide.classList.remove("visible");
-        slide.classList.add("hidden");
-      }
-    });
-
-    if (currentSlideIndex > 1) {
-      currentSlideIndex = 0;
-    } else {
-      currentSlideIndex += 1;
-    }
-    // Slide
+    updateSlides(currentSlideIndex);
+    currentSlideIndex > 1 ? (currentSlideIndex = 0) : (currentSlideIndex += 1);
   }, duration);
-
-  return interval;
 }
 
-const interval = slide(SLIDE_INTERVAL_IN_MILLISECONDS);
-
-[...slideRadioButtons].forEach((btn, index) => {
+// slide(SLIDE_INTERVAL_IN_MILLISECONDS);
+slideRadioButtons.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     btn.checked = true;
     currentSlideIndex = index;
-    [...slideElements].map((slide, index) => {
-      if (index === currentSlideIndex) {
-        slide.classList.add("visible");
-        slide.classList.remove("hidden");
-      } else {
-        slide.classList.remove("visible");
-        slide.classList.add("hidden");
-      }
-    });
+    updateSlides(currentSlideIndex);
   });
 });
+
+function updateSlides(currentIndex) {
+  slideElements.forEach((slide, index) => {
+    if (index === currentIndex) {
+      slide.classList.add("visible-slide");
+    } else {
+      slide.classList.remove("visible-slide");
+    }
+  });
+}
