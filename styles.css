@@ -123,3 +123,8 @@ img.category:hover {
   border-bottom: 1px solid currentColor;
   width: 120px;
 }
+
+/* MAIN section */
+.bb {
+  border-bottom: 1px solid currentColor;
+}
