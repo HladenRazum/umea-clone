@@ -29,7 +29,6 @@
 .btn-link:hover .arc-1,
 .menu-btn:hover .arc-1 {
   stroke-dashoffset: 165;
-  stroke: red;
 }
 
 /* Slider */
