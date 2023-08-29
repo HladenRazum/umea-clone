@@ -1,55 +1,60 @@
 const slideRadioButtons = document.querySelectorAll("input[name=slides]");
 const slideElements = document.querySelectorAll(".slide-wrapper");
 
-const SLIDE_INTERVAL_IN_MILLISECONDS = 7000;
+const SLIDE_INTERVAL_IN_MILLISECONDS = 8000;
+const INVISIBLE_CLASS = "opacity-none";
+
+const isHidden = (el) => el.classList.contains(INVISIBLE_CLASS);
 
 let currentSlideIndex = 0;
 
+slideElements.forEach((slide) => {
+   slide.addEventListener("transitionend", () => {
+      if (isHidden(slide)) {
+         slide.style.display = "none";
+      }
+   });
+});
+
 function slide(duration) {
-  const interval = setInterval(() => {
-    [...slideRadioButtons].map((slide, index) => {
-      if (currentSlideIndex === index) {
-        slide.checked = true;
+   setInterval(() => {
+      slideRadioButtons.forEach((slide, index) => {
+         if (currentSlideIndex === index) {
+            slide.checked = true;
+         } else {
+            slide.checked = false;
+         }
+      });
+
+      updateSlides(currentSlideIndex);
+
+      if (currentSlideIndex > 1) {
+         currentSlideIndex = 0;
       } else {
-        slide.checked = false;
+         currentSlideIndex += 1;
       }
-    });
-
-    [...slideElements].map((slide, index) => {
-      if (index === currentSlideIndex) {
-        slide.classList.add("visible");
-        slide.classList.remove("hidden");
-      } else {
-        slide.classList.remove("visible");
-        slide.classList.add("hidden");
-      }
-    });
-
-    if (currentSlideIndex > 1) {
-      currentSlideIndex = 0;
-    } else {
-      currentSlideIndex += 1;
-    }
-    // Slide
-  }, duration);
-
-  return interval;
+   }, duration);
 }
 
-const interval = slide(SLIDE_INTERVAL_IN_MILLISECONDS);
-
-[...slideRadioButtons].forEach((btn, index) => {
-  btn.addEventListener("click", (e) => {
-    btn.checked = true;
-    currentSlideIndex = index;
-    [...slideElements].map((slide, index) => {
-      if (index === currentSlideIndex) {
-        slide.classList.add("visible");
-        slide.classList.remove("hidden");
+function updateSlides(currentIndex) {
+   slideElements.forEach((slide, index) => {
+      if (index === currentIndex) {
+         slide.style.removeProperty("display");
+         setTimeout(() => {
+            slide.classList.remove(INVISIBLE_CLASS);
+         }, 0);
       } else {
-        slide.classList.remove("visible");
-        slide.classList.add("hidden");
+         slide.classList.add(INVISIBLE_CLASS);
       }
-    });
-  });
+   });
+}
+
+slide(SLIDE_INTERVAL_IN_MILLISECONDS);
+
+slideRadioButtons.forEach((btn, index) => {
+   btn.addEventListener("click", (e) => {
+      btn.checked = true;
+      currentSlideIndex = index;
+      updateSlides(currentSlideIndex);
+   });
 });
