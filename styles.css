@@ -1,4 +1,10 @@
 /* Rotating button link */
+:root {
+   --animation-duration-normal: 600ms;
+   --animation-duration-slow: 1800ms;
+   --animation-duration-fast: 360ms;
+}
+
 .arc-1 {
    opacity: 0.6;
    stroke-dashoffset: 251;
@@ -115,4 +121,9 @@ img.category:hover {
    bottom: -10px;
    border-bottom: 1px solid currentColor;
    width: 120px;
+}
+
+/* MAIN section */
+.bb {
+   border-bottom: 1px solid currentColor;
 }
