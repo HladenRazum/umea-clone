@@ -1,9 +1,22 @@
-/* Rotating button link */
 :root {
   --animation-duration-normal: 600ms;
   --animation-duration-slow: 1800ms;
   --animation-duration-fast: 360ms;
+  --color-mocka: #e7e1d8;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+/* Rotating button link */
 
 .arc-1 {
   opacity: 0.6;
@@ -126,4 +139,14 @@ img.category:hover {
 /* MAIN section */
 .bb {
   border-bottom: 1px solid currentColor;
+}
+
+/* OUR TEAM section */
+.our-team::before {
+  content: "";
+  width: 100%;
+  height: 483px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--color-mocka);
 }
