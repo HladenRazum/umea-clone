@@ -13,7 +13,6 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
       tailwind.config = {
         theme: {
@@ -318,15 +317,42 @@
       </div>
     </main>
     <!-- NEWSLETTER -->
-    <section>
-      <div class="border border-black flex flex-col p-8">
-        <h2>Sign up for our newsletter</h2>
-        <input
-          type="email"
-          placeholder="Your Email"
-          spellcheck="false"
-          class="placeholder:text-inherit font-light text-sm bb py-2 focus:outline-none"
-        />
+    <section class="mx-6 mb-[200px]">
+      <div class="border border-black flex flex-col px-8 py-14 gap-5">
+        <header class="pr-6 order-2">
+          <h2 class="text-3xl font-medium mb-2">Sign up for our newsletter</h2>
+          <input
+            type="email"
+            placeholder="Your Email"
+            spellcheck="false"
+            class="placeholder:text-inherit font-light text-caption bb w-full py-2 focus:outline-none"
+          />
+        </header>
+        <div class="order-1 font-light text-caption flex flex-col gap-6">
+          <div class="max-w-[274px] flex items-center gap-5">
+            <img src="assets/cart-icon.png" width="63" height="63" alt="cart" />
+            <div>
+              <h5 class="font-medium text-lg mb-2">20 day returns</h5>
+              <p class="leading-relaxed">
+                Vel risus commodo viverra maecenas accumsan.
+              </p>
+            </div>
+          </div>
+          <div class="max-w-[274px] flex items-center gap-5">
+            <img
+              src="assets/shipping-icon.png"
+              width="63"
+              height="63"
+              alt="shipping"
+            />
+            <div>
+              <h5 class="font-medium text-lg mb-2">Free Shipping</h5>
+              <p class="leading-relaxed">
+                Vel risus commodo viverra maecenas accumsan.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- FOOTER -->
