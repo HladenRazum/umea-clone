@@ -142,6 +142,15 @@ img.category:hover {
 }
 
 /* OUR TEAM section */
+.team-member-img {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.team-member-img:hover {
+  transform: translateX(5px) scale(1.05);
+}
+
 .our-team::before {
   content: "";
   width: 100%;
