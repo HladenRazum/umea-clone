@@ -87,6 +87,20 @@ ul {
   height: 100%;
 }
 
+.slide-text {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slide-in var(--animation-duration-normal) ease-in-out forwards;
+}
+
+.slide-text:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.slide-text:nth-child(3) {
+  animation-delay: 600ms;
+}
+
 /* Slider radio buttons */
 input[type="radio"] {
   -webkit-appearance: none;
@@ -188,4 +202,15 @@ img.category:hover {
 .logo-item:hover {
   transform: translateY(-5px);
   transition: all 200ms ease-out;
+}
+
+@keyframes slide-in {
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
