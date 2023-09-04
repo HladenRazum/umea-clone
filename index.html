@@ -26,6 +26,7 @@
             screens: {
               tablet: "550px",
               md: "650px",
+              lg: "1100px",
             },
           },
         },
@@ -33,7 +34,10 @@
     </script>
   </head>
   <body class="text-black font-['Roboto'] bg-white">
-    <header class="h-[70px] text-black flex gap-1 px-10 items-center relative">
+    <!-- MOBILE HEADER -->
+    <header
+      class="h-[70px] text-black flex gap-1 px-10 items-center relative lg:hidden"
+    >
       <a href="/">
         <img
           src="https://umea.qodeinteractive.com/wp-content/uploads/2021/04/umea-logo-regular.png"
@@ -92,8 +96,10 @@
         </div>
       </span>
     </header>
+    <!-- DESKTOP HEADER -->
+    <header></header>
     <!-- SLIDES -->
-    <section class="relative h-[715px] md:h-[66vw]">
+    <section class="relative h-[715px] md:h-[66vw] mb-10 lg:h-[645px]">
       <ul id="slides-container">
         <li class="bg-white text-black slide-wrapper h-full">
           <article
@@ -238,10 +244,10 @@
       </div>
     </section>
     <!-- CATEGORIES -->
-    <ul class="my-6 flex flex-col gap-7 mx-8">
+    <ul class="my-6 flex flex-col gap-7 mx-8 lg:flex-row">
       <li class="relative w-full h-full overflow-hidden">
         <a>
-          <div class="h-[245px] md:h-[330px]">
+          <div class="h-[245px] md:h-[330px] lg:h-[200px]">
             <img
               class="category absolute top-0 left-0"
               src="https://umea.qodeinteractive.com/wp-content/uploads/2020/11/h5-baner-1.jpg"
@@ -260,7 +266,7 @@
       </li>
       <li class="relative w-full h-full overflow-hidden">
         <a>
-          <div class="h-[245px] md:h-[330px]">
+          <div class="h-[245px] md:h-[330px] lg:h-[200px]">
             <img
               class="category absolute top-0 left-0"
               src="https://umea.qodeinteractive.com/wp-content/uploads/2021/01/h5-baner-2.jpg"
@@ -278,7 +284,7 @@
       </li>
       <li class="relative w-full h-full overflow-hidden">
         <a>
-          <div class="h-[245px] md:h-[330px]">
+          <div class="h-[245px] md:h-[330px] lg:h-[200px]">
             <img
               class="category absolute top-0 left-0"
               src="https://umea.qodeinteractive.com/wp-content/uploads/2020/11/h5-baner-3.jpg"
@@ -303,7 +309,7 @@
         <h2 class="text-4xl font-medium">Ideal for your home</h2>
         <div class="w-[120px] bb"></div>
       </header>
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-8 lg:grid-cols-4">
         <article class="item mb-[35px]">
           <div class="relative group">
             <img
@@ -681,7 +687,9 @@
     </section>
     <!-- NEWSLETTER -->
     <section class="mx-8 mb-[200px] md:mx-[7vw]">
-      <div class="border border-black flex flex-col px-8 py-14 gap-5 md:gap-10">
+      <div
+        class="border border-black flex flex-col px-8 py-14 gap-5 md:gap-10 lg:flex-row lg:gap-5"
+      >
         <header class="pr-8 order-2">
           <h2 class="text-3xl font-medium mb-2">Sign up for our newsletter</h2>
           <div class="relative max-w-[400px]">
@@ -716,7 +724,7 @@
           </div>
         </header>
         <div
-          class="order-1 font-light text-caption flex flex-col md:flex-row gap-6 md:gap-10"
+          class="order-1 font-light text-caption flex flex-col md:flex-row gap-6 md:gap-10 lg:flex-1"
         >
           <div class="max-w-[274px] flex items-center gap-5">
             <img src="assets/cart-icon.png" width="63" height="63" alt="cart" />
@@ -746,7 +754,7 @@
     </section>
     <!-- FOOTER -->
     <footer class="mx-8 font-light text-caption leading-relaxed md:mx-[7vw]">
-      <div class="grid md:gap-10 md:grid-cols-2 md:mb-10">
+      <div class="grid md:gap-10 md:grid-cols-2 md:mb-10 lg:grid-cols-4">
         <section>
           <h4 class="mb-6 text-lg font-medium">
             <a href="/">
@@ -757,11 +765,11 @@
                 height="17"
             /></a>
           </h4>
-          <p class="mr-[14%]">
+          <p class="mr-[14%] mb-6">
             Welcome to a place of refinement and beauty. This is Umeå, a WP gem
             we made for all furniture stores & brands.
           </p>
-          <ul class="my-6 text-sm font-normal">
+          <ul class="text-sm font-normal h-auto">
             <li class="mb-2 inline-block mr-2"><a href="#">FB.</a></li>
             <li class="mb-2 inline-block mr-2"><a href="#">TW.</a></li>
             <li class="mb-2 inline-block mr-2"><a href="#">IN.</a></li>
@@ -771,7 +779,7 @@
         </section>
         <section>
           <h4 class="text-lg font-medium">Studio</h4>
-          <ul class="mt-4 mb-8">
+          <ul class="mt-4">
             <li class="mb-2"><a href="#">Visit our Store</a></li>
             <li class="mb-2"><a href="#">About Us</a></li>
             <li class="mb-2"><a href="#">Our Blog</a></li>
@@ -781,7 +789,7 @@
         </section>
         <section>
           <h4 class="text-lg font-medium">Shopping</h4>
-          <ul class="mt-4 mb-8">
+          <ul class="mt-4">
             <li class="mb-2"><a href="#">Online Payments</a></li>
             <li class="mb-2"><a href="#">Gift Cards</a></li>
             <li class="mb-2"><a href="#">Return Policy</a></li>

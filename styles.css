@@ -83,10 +83,6 @@ li.slide-wrapper {
   width: 100%;
 }
 
-ul {
-  height: 100%;
-}
-
 .slide-text {
   opacity: 0;
   transform: translateX(-40px);
