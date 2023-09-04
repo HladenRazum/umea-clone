@@ -23,9 +23,10 @@
               caption: "15px",
               subtitle: "19px",
             },
-          },
-          screens: {
-            tablet: "550px",
+            screens: {
+              tablet: "550px",
+              md: "650px",
+            },
           },
         },
       };
@@ -624,7 +625,7 @@
           <h2 class="text-4xl font-medium">Meet our team</h2>
           <div class="w-[120px] bb"></div>
         </header>
-        <div class="grid gap-10">
+        <div class="grid gap-10 lg:grid-cols-4 md:grid-cols-2">
           <figure class="py-2 overflow-hidden">
             <img
               loading="lazy"
