@@ -93,7 +93,7 @@
       </span>
     </header>
     <!-- SLIDES -->
-    <section class="relative h-[715px] md:h-[600px]">
+    <section class="relative h-[715px] md:h-[66vw]">
       <ul id="slides-container">
         <li class="bg-white text-black slide-wrapper h-full">
           <article
@@ -577,7 +577,9 @@
     </main>
     <!-- LOGOS section -->
     <section class="py-12 mb-[65px]">
-      <ul class="flex flex-wrap items-center flex-col gap-8">
+      <ul
+        class="flex flex-wrap items-center flex-col gap-8 md:flex-row justify-center max-w-[86%] mx-auto"
+      >
         <li class="flex items-center justify-center logo-item">
           <img
             class="max-w-[50%]"
@@ -617,7 +619,7 @@
     </section>
     <!-- OUT TEAM -->
     <section class="our-team mb-[100px]">
-      <div class="mx-8 pt-[90px]">
+      <div class="mx-8 pt-[90px] md:mx-[7vw]">
         <header class="flex flex-col items-center gap-3 py-12">
           <p class="uppercase text-xs tracking-wider leading-6">
             Our creative force
@@ -678,11 +680,11 @@
       </div>
     </section>
     <!-- NEWSLETTER -->
-    <section class="mx-8 mb-[200px]">
-      <div class="border border-black flex flex-col px-8 py-14 gap-5">
+    <section class="mx-8 mb-[200px] md:mx-[7vw]">
+      <div class="border border-black flex flex-col px-8 py-14 gap-5 md:gap-10">
         <header class="pr-8 order-2">
           <h2 class="text-3xl font-medium mb-2">Sign up for our newsletter</h2>
-          <div class="relative">
+          <div class="relative max-w-[400px]">
             <input
               type="email"
               placeholder="Your Email"
@@ -713,7 +715,9 @@
             </button>
           </div>
         </header>
-        <div class="order-1 font-light text-caption flex flex-col gap-6">
+        <div
+          class="order-1 font-light text-caption flex flex-col md:flex-row gap-6 md:gap-10"
+        >
           <div class="max-w-[274px] flex items-center gap-5">
             <img src="assets/cart-icon.png" width="63" height="63" alt="cart" />
             <div>
@@ -741,60 +745,62 @@
       </div>
     </section>
     <!-- FOOTER -->
-    <footer class="mx-8 font-light text-caption leading-relaxed">
-      <section>
-        <h4 class="mb-6 text-lg font-medium">
-          <a href="/">
-            <img
-              src="https://umea.qodeinteractive.com/wp-content/uploads/2021/04/umea-logo-regular.png"
-              alt="logo"
-              width="47"
-              height="17"
-          /></a>
-        </h4>
-        <p class="mr-[14%]">
-          Welcome to a place of refinement and beauty. This is Umeå, a WP gem we
-          made for all furniture stores & brands.
-        </p>
-        <ul class="my-6 text-sm font-normal">
-          <li class="mb-2 inline-block mr-2"><a href="#">FB.</a></li>
-          <li class="mb-2 inline-block mr-2"><a href="#">TW.</a></li>
-          <li class="mb-2 inline-block mr-2"><a href="#">IN.</a></li>
-          <li class="mb-2 inline-block mr-2"><a href="#">BE.</a></li>
-          <li class="mb-2 inline-block mr-2"><a href="#">DR.</a></li>
-        </ul>
-      </section>
-      <section>
-        <h4 class="text-lg font-medium">Studio</h4>
-        <ul class="mt-4 mb-8">
-          <li class="mb-2"><a href="#">Visit our Store</a></li>
-          <li class="mb-2"><a href="#">About Us</a></li>
-          <li class="mb-2"><a href="#">Our Blog</a></li>
-          <li class="mb-2"><a href="#">Craftmanship</a></li>
-          <li class="mb-2"><a href="#">Apply For a Job</a></li>
-        </ul>
-      </section>
-      <section>
-        <h4 class="text-lg font-medium">Shopping</h4>
-        <ul class="mt-4 mb-8">
-          <li class="mb-2"><a href="#">Online Payments</a></li>
-          <li class="mb-2"><a href="#">Gift Cards</a></li>
-          <li class="mb-2"><a href="#">Return Policy</a></li>
-          <li class="mb-2"><a href="#">Furniture Assembling</a></li>
-          <li class="mb-2"><a href="#">Shipping Methods</a></li>
-        </ul>
-      </section>
-      <section>
-        <h4 class="text-lg font-medium mb-4">Payment Methods</h4>
-        <p class="mb-10">
-          Select one of many supported payment providers from the list below.
-        </p>
-        <img
-          src="https://umea.qodeinteractive.com/wp-content/uploads/2021/03/footer-logo-group.png"
-          alt="master card, paypal, visa, american express"
-          class="mb-20"
-        />
-      </section>
+    <footer class="mx-8 font-light text-caption leading-relaxed md:mx-[7vw]">
+      <div class="grid md:gap-10 md:grid-cols-2 md:mb-10">
+        <section>
+          <h4 class="mb-6 text-lg font-medium">
+            <a href="/">
+              <img
+                src="https://umea.qodeinteractive.com/wp-content/uploads/2021/04/umea-logo-regular.png"
+                alt="logo"
+                width="47"
+                height="17"
+            /></a>
+          </h4>
+          <p class="mr-[14%]">
+            Welcome to a place of refinement and beauty. This is Umeå, a WP gem
+            we made for all furniture stores & brands.
+          </p>
+          <ul class="my-6 text-sm font-normal">
+            <li class="mb-2 inline-block mr-2"><a href="#">FB.</a></li>
+            <li class="mb-2 inline-block mr-2"><a href="#">TW.</a></li>
+            <li class="mb-2 inline-block mr-2"><a href="#">IN.</a></li>
+            <li class="mb-2 inline-block mr-2"><a href="#">BE.</a></li>
+            <li class="mb-2 inline-block mr-2"><a href="#">DR.</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="text-lg font-medium">Studio</h4>
+          <ul class="mt-4 mb-8">
+            <li class="mb-2"><a href="#">Visit our Store</a></li>
+            <li class="mb-2"><a href="#">About Us</a></li>
+            <li class="mb-2"><a href="#">Our Blog</a></li>
+            <li class="mb-2"><a href="#">Craftmanship</a></li>
+            <li class="mb-2"><a href="#">Apply For a Job</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="text-lg font-medium">Shopping</h4>
+          <ul class="mt-4 mb-8">
+            <li class="mb-2"><a href="#">Online Payments</a></li>
+            <li class="mb-2"><a href="#">Gift Cards</a></li>
+            <li class="mb-2"><a href="#">Return Policy</a></li>
+            <li class="mb-2"><a href="#">Furniture Assembling</a></li>
+            <li class="mb-2"><a href="#">Shipping Methods</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="text-lg font-medium mb-4">Payment Methods</h4>
+          <p class="mb-10">
+            Select one of many supported payment providers from the list below.
+          </p>
+          <img
+            src="https://umea.qodeinteractive.com/wp-content/uploads/2021/03/footer-logo-group.png"
+            alt="master card, paypal, visa, american express"
+            class="mb-20"
+          />
+        </section>
+      </div>
       <div class="w-full bb"></div>
       <p class="text-center mt-3 mb-3">
         &copy; 2021 Qode Interactive, All Rights Reserved
